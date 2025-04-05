@@ -73,7 +73,7 @@ const products = [
 
 export default function ProductSection() {
   const HeroImage = {
-    BlobImage: "/blobs/largeBlog.svg",
+    BlobImage: "/blobs/largeblog.svg",
   };
   const pathname = usePathname();
   const isProductPage = pathname.includes("/products");

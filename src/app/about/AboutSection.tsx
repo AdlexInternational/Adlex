@@ -15,7 +15,7 @@ const StatisticsCard = ({ label, number }: { label: string; number: string }) =>
 const AboutSection = () => {
   const HeroImage = {
     PaperImage: "/images/WastePaperRecycle.jpg",
-    BlobImage: "/blobs/largeBlog.svg",
+    BlobImage: "/blobs/largeblog.svg",
   };
  const router = useRouter();
   const handleNavigate = (path: string) => {
