@@ -22,23 +22,30 @@ html {
 }
 
 @font-face {
-  font-family: "Rosmatika";
-  src: url("/fonts/Rosmatika.ttf.eot");
+  font-family: "Signika";
+  src: url("/fonts/Signika-Regular.ttf");
   /* IE9 Compat Modes */
-  src: url("/fonts/Rosmatika.ttf.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/Rosmatika.ttf.woff") format("woff");
+  src: url("/fonts/Signika-Regular.ttf?#iefix") format("embedded-opentype"),
+    url("/fonts/Signika-Regular.ttf") format("ttf");
   /* WOFF for modern browsers */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("/fonts/SF-Pro-Display-Regular.otf") format("opentype");
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("opentype");
   font-style: normal;
 }
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "SF Pro Display";
+  font-family: "Signika";
+}
+.safearea {
+  padding-top: 110px;
+
+  @media (max-width: 600px) {
+    padding-top: 80px;
+  }
 }
