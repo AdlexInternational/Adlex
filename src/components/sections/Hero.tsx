@@ -24,12 +24,12 @@ export default function Hero() {
  "/images/wastepaperImages/mixed.jpg"
   ];
 
-  const sections = [
-    { title: "Dumpster Sizes", icon: PiRecycleBold, blob: "smallBlob.svg" },
-    { title: "Waste Collection", icon: PiRecycleBold, blob: "smallBlob.svg" },
-    { title: "Pickup Schedule", icon: PiRecycleBold, blob: "smallBlob.svg" },
-    { title: "Recycling Services", icon: PiRecycleBold, blob: "smallBlob.svg" },
-  ];
+const sections = [
+  { title: "Corrugation", icon: PiRecycleBold, blob: "smallBlob.svg", pera: "Eco-friendly corrugated materials for sustainable packaging solutions." },
+  { title: "Writing & Printing", icon: PiRecycleBold, blob: "smallBlob.svg", pera: "High-quality recycled paper for writing and printing needs." },
+  { title: "Packaging", icon: PiRecycleBold, blob: "smallBlob.svg", pera: "Durable and sustainable packaging options for various industries." },
+  { title: "Corrugation", icon: PiRecycleBold, blob: "smallBlob.svg", pera: "Strong and lightweight corrugated materials for packaging." },
+];
 
   return (
     <>
@@ -122,7 +122,7 @@ export default function Hero() {
               <SwiperSlide key={index}>
                 <div className="relative flex flex-col items-center pb-10">
                   {/* Blob Background */}
-                  <div className="absolute -top-5 w-20 h-20 flex justify-center items-center">
+                  <div className="absolute -top-3 w-20 h-20 flex justify-center items-center">
                     <Image
                       src={`/blobs/${blob}`}
                       alt="Blob Background"
@@ -131,7 +131,7 @@ export default function Hero() {
                       className="object-cover opacity-50"
                     />
                   </div>
-                  <div className="absolute -top-5 w-20 h-20 flex justify-center items-center rotate-90">
+                  <div className="absolute -top-3 w-20 h-20 flex justify-center items-center rotate-90">
                     <Image
                       src={`/blobs/${blob}`}
                       alt="Blob Background"
@@ -157,7 +157,7 @@ export default function Hero() {
 
         {/* Desktop Grid (hidden on mobile) */}
         <div className=" hidden sm:grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
-          {sections.map(({ title, icon: Icon, blob }, index) => (
+          {sections.map(({ title, icon: Icon, blob,pera }, index) => (
             <div key={index} className="relative flex flex-col items-center">
               {/* Blob Background */}
               <div className="absolute sm:-top-10 -top-5 w-20 h-20 flex justify-center items-center sm:w-32 sm:h-32">
@@ -185,7 +185,9 @@ export default function Hero() {
               {/* Title */}
               <h3 className="font-bold text-lg mt-8 z-20">{title}</h3>
               <p className="text-gray-500 text-sm max-w-xs z-20">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                {
+                  pera
+                }
               </p>
             </div>
           ))}
