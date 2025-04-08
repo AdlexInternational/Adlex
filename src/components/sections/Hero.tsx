@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { PiRecycleBold } from "react-icons/pi";
+import { PiPackageLight, PiRecycleBold } from "react-icons/pi";
 import { useRouter } from "next/navigation";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -10,6 +10,8 @@ import Image from "next/image";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { BsPrinter } from "react-icons/bs";
+import { MdLineStyle } from "react-icons/md";
 
 export default function Hero() {
   const router = useRouter();
@@ -25,10 +27,10 @@ export default function Hero() {
   ];
 
 const sections = [
-  { title: "Corrugation", icon: PiRecycleBold, blob: "smallBlob.svg", pera: "Eco-friendly corrugated materials for sustainable packaging solutions." },
-  { title: "Writing & Printing", icon: PiRecycleBold, blob: "smallBlob.svg", pera: "High-quality recycled paper for writing and printing needs." },
-  { title: "Packaging", icon: PiRecycleBold, blob: "smallBlob.svg", pera: "Durable and sustainable packaging options for various industries." },
-  { title: "Corrugation", icon: PiRecycleBold, blob: "smallBlob.svg", pera: "Strong and lightweight corrugated materials for packaging." },
+  { title: "Corrugation", icon: MdLineStyle, blob: "smallBlob.svg", pera: "Eco-friendly corrugated materials for sustainable packaging solutions." },
+  { title: "Writing & Printing", icon: BsPrinter, blob: "smallBlob.svg", pera: "High-quality recycled paper for writing and printing needs." },
+  { title: "Packaging", icon: PiPackageLight, blob: "smallBlob.svg", pera: "Durable and sustainable packaging options for various industries." },
+  { title: "Corrugation", icon: MdLineStyle, blob: "smallBlob.svg", pera: "Strong and lightweight corrugated materials for packaging." },
 ];
 
   return (
