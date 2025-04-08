@@ -45,7 +45,7 @@ const sections = [
             loop={true}
             autoplay={{
               delay: 1500,
-              disableOnInteraction: false,
+              disableOnInteraction: true,
             }}
             pagination={{
               clickable: true,
@@ -107,7 +107,7 @@ const sections = [
       </section>
 
       {/* Info Section - Swiper for mobile, Grid for desktop */}
-      <div className=" relative w-full bg-white shadow-lg py-8 px-6 sm:px-12 container mx-auto rounded-2xl -mt-24 z-30">
+      <div className=" relative w-full bg-white shadow-lg py-4 px-6 sm:px-12 container mx-auto rounded-2xl -mt-24 z-30">
         {/* Mobile Swiper (hidden on sm and up) */}
         <div className="sm:hidden">
           <Swiper
@@ -118,7 +118,11 @@ const sections = [
               bulletClass: "swiper-pagination-bullet custom-pagination",
             }}
             loop={true}
-            modules={[Pagination]}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: true,
+            }}
+            modules={[Autoplay, Pagination, Navigation]}
             className="info-swiper"
           >
             {sections.map(({ title, icon: Icon, blob ,pera}, index) => (
