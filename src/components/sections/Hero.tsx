@@ -115,10 +115,11 @@ const sections = [
               clickable: true,
               bulletClass: "swiper-pagination-bullet custom-pagination",
             }}
+            loop={true}
             modules={[Pagination]}
             className="info-swiper"
           >
-            {sections.map(({ title, icon: Icon, blob }, index) => (
+            {sections.map(({ title, icon: Icon, blob ,pera}, index) => (
               <SwiperSlide key={index}>
                 <div className="relative flex flex-col items-center pb-10">
                   {/* Blob Background */}
@@ -146,8 +147,10 @@ const sections = [
 
                   {/* Title */}
                   <h3 className="font-bold text-lg mt-8 z-20">{title}</h3>
-                  <p className="text-gray-500 text-sm max-w-xs z-20">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  <p className="text-gray-500 text-sm max-w-xs z-20 text-center">
+                   {
+                    pera
+                   }
                   </p>
                 </div>
               </SwiperSlide>
