@@ -131,7 +131,7 @@ const Header = () => {
               alt="Arowlex Logo"
               width={200} 
               height={200} 
-              className="w-[120px] md:w-50 md:h-16 object-contain"
+              className="w-[200px] md:w-70 md:h-16 object-contain"
             />
             {/* <span className="text-xl lg:text-4xl font-normal rosmatika text-green-500">
               Arowlex

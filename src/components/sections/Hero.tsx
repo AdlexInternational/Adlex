@@ -1,44 +1,76 @@
 'use client'
 import React from "react";
-import Image from "next/image";
 import { PiRecycleBold } from "react-icons/pi";
-import { FaDumpster, FaTrashAlt, FaTruckMoving } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Image from "next/image";
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export default function Hero() {
   const router = useRouter();
   const handleNavigate = (path: string) => {
     router.push(path);
   };
+ 
+  const heroImages = [
+ "/images/wastepaperImages/banner1.jpg",
+  "/images/wastepaperImages/banner2.jpg",
+  "/images/wastepaperImages/banner3.jpg",
+ "/images/wastepaperImages/mixed.jpg"
+  ];
 
-  const HeroImage = {
-    PaperImage: "/images/WastePaperRecycle.jpg",
-  };
   const sections = [
     { title: "Dumpster Sizes", icon: PiRecycleBold, blob: "smallBlob.svg" },
     { title: "Waste Collection", icon: PiRecycleBold, blob: "smallBlob.svg" },
     { title: "Pickup Schedule", icon: PiRecycleBold, blob: "smallBlob.svg" },
-    { title: "Pickup Schedule", icon: PiRecycleBold, blob: "smallBlob.svg" },
+    { title: "Recycling Services", icon: PiRecycleBold, blob: "smallBlob.svg" },
   ];
 
   return (
     <>
       {/* Hero Section */}
       <section className="relative w-full h-[800px] sm:h-screen flex items-center pt-20">
-        {/* Background Image */}
+        {/* Swiper Slider Background */}
         <div className="absolute inset-0 w-full h-full">
-          <Image
-            src={HeroImage.PaperImage}
-            alt="Waste Management Background"
-            layout="fill"
-            objectFit="cover"
-            priority
-            className="z-0"
-          />
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={false}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="w-full h-full"
+          >
+            {heroImages.map((image, index) => (
+              <SwiperSlide key={index}>
+                <div className="relative w-full h-full">
+                  <Image
+                    src={image}
+                    alt={`Waste Management Background ${index + 1}`}
+                    layout="fill"
+                    objectFit="cover"
+                    priority
+                    className="z-0"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
 
         {/* Left Side Green Overlay (Gradient) */}
-        <div className="absolute left-0 top-0 h-full w-full md:w-1/2 bg-gradient-to-r from-green-900 via-green-700 to-transparent opacity-70"></div>
+        <div className="absolute left-0 top-0 h-full w-full md:w-1/2 bg-gradient-to-r from-green-900 via-green-700 to-transparent opacity-70 z-10"></div>
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-6 flex justify-center sm:justify-start">
@@ -72,32 +104,82 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* Info Section (Positioned Below Hero) */}
-      <div className="relative w-full bg-white shadow-lg py-8 px-6 sm:px-12 container mx-auto rounded-2xl -mt-24">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
+      {/* Info Section - Swiper for mobile, Grid for desktop */}
+      <div className=" relative w-full bg-white shadow-lg py-8 px-6 sm:px-12 container mx-auto rounded-2xl -mt-24 z-30">
+        {/* Mobile Swiper (hidden on sm and up) */}
+        <div className="sm:hidden">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+              bulletClass: "swiper-pagination-bullet custom-pagination",
+            }}
+            modules={[Pagination]}
+            className="info-swiper"
+          >
+            {sections.map(({ title, icon: Icon, blob }, index) => (
+              <SwiperSlide key={index}>
+                <div className="relative flex flex-col items-center pb-10">
+                  {/* Blob Background */}
+                  <div className="absolute -top-5 w-20 h-20 flex justify-center items-center">
+                    <Image
+                      src={`/blobs/${blob}`}
+                      alt="Blob Background"
+                      width={100}
+                      height={100}
+                      className="object-cover opacity-50"
+                    />
+                  </div>
+                  <div className="absolute -top-5 w-20 h-20 flex justify-center items-center rotate-90">
+                    <Image
+                      src={`/blobs/${blob}`}
+                      alt="Blob Background"
+                      width={120}
+                      height={120}
+                      className="object-cover opacity-50"
+                    />
+                  </div>
+
+                  {/* Icon */}
+                  <Icon size={40} className="text-green-600 relative z-20" />
+
+                  {/* Title */}
+                  <h3 className="font-bold text-lg mt-8 z-20">{title}</h3>
+                  <p className="text-gray-500 text-sm max-w-xs z-20">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  </p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        {/* Desktop Grid (hidden on mobile) */}
+        <div className=" hidden sm:grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
           {sections.map(({ title, icon: Icon, blob }, index) => (
             <div key={index} className="relative flex flex-col items-center">
-              {/* Blob Background (Now Visible!) */}
+              {/* Blob Background */}
               <div className="absolute sm:-top-10 -top-5 w-20 h-20 flex justify-center items-center sm:w-32 sm:h-32">
                 <Image
                   src={`/blobs/${blob}`}
                   alt="Blob Background"
-                  width={100} // Ensuring width
-                  height={100} // Ensuring height
+                  width={100}
+                  height={100}
                   className="object-cover opacity-50"
                 />
               </div>
-              <div className="absolute sm:-top-10  -top-5 w-20 h-20 flex justify-center items-center sm:w-32 sm:h-32 rotate-90">
+              <div className="absolute sm:-top-10 -top-5 w-20 h-20 flex justify-center items-center sm:w-32 sm:h-32 rotate-90">
                 <Image
                   src={`/blobs/${blob}`}
                   alt="Blob Background"
-                  width={120} // Ensuring width
-                  height={120} // Ensuring height
+                  width={120}
+                  height={120}
                   className="object-cover opacity-50"
                 />
               </div>
 
-              {/* Icon (Now in Front) */}
+              {/* Icon */}
               <Icon size={40} className="text-green-600 relative z-20" />
 
               {/* Title */}
