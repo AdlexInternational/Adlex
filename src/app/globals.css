@@ -43,11 +43,11 @@ body {
   font-family: "Signika";
 }
 .safearea {
-  padding-top: 110px;
+  /* padding-top: 110px; */
 
-  @media (max-width: 600px) {
+  /* @media (max-width: 600px) {
     padding-top: 80px;
-  }
+  } */
 }
 
 .swiper-pagination-bullet  {

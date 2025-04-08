@@ -17,7 +17,7 @@ export default function Breadscrumb({ items }: Props) {
     <div className="relative w-full h-[300px] bg-[#003d29] flex items-center justify-center z-10">
       <nav className="text-white text-lg flex items-center space-x-2">
         {items.map((item, index) => (
-          <div className="flex items-center space-x-2" key={index}>
+          <div className="flex items-center space-x-2 mt-30 sm:mt-50" key={index}>
             {item.href ? (
               <Link href={item.href} className="hover:underline">
                 {item.label}
