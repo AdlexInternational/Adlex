@@ -1,35 +1,37 @@
 'use client'
 import React from "react";
-import { FaCheckCircle, FaGlobe, FaTag, FaTruck, FaUsers } from "react-icons/fa";
-import { motion, useInView } from "framer-motion";
+
+import { motion} from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
+import { CiCircleCheck, CiDeliveryTruck, CiGlobe, CiShoppingTag } from "react-icons/ci";
+import { PiUsersThreeThin } from "react-icons/pi";
 
 export default function WhyChooseUsSection() {
   const features = [
     {
-      icon: <FaGlobe size={32} />,
+      icon: <CiGlobe size={32} />,
       title: "Global Sourcing Network",
       description:
         "Strong ties with suppliers in the USA, Europe, Middle East, and Asia.",
     },
     {
-      icon: <FaTruck size={32} />,
+      icon: <CiDeliveryTruck size={32} />,
       title: "Reliable & Timely Deliveries",
       description:"Ensuring a smooth supply chain for our customers with on-time deliveries.",
     },
     {
-      icon: <FaCheckCircle size={32} />,
+      icon: <CiCircleCheck size={32} />,
       title: "Quality Assurance",
       description:
         "Strict quality control and compliance with international standards.",
     },
     {
-      icon: <FaTag size={32} />,
+      icon: <CiShoppingTag size={32} />,
       title: "Competitive Pricing",
       description: "Best market rates with complete transparency.",
     },
     {
-      icon: <FaUsers size={32} />,
+      icon: <PiUsersThreeThin size={32} />,
       title: "Customer-Centric Approach",
       description: "Customized solutions tailored to client needs.",
     },

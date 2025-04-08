@@ -34,7 +34,6 @@ const products = [
       "CBS or Coated Book Stock is high-grade recovered paper from books with minimal contaminants.",
     Icon: PiRecycleBold,
     image: "/images/wastepaperImages/cbs.jpg",
-
   },
   {
     title: "ONP",
@@ -42,7 +41,6 @@ const products = [
       "Old Newspaper (ONP) is collected post-consumer newspaper material used in recycled newsprint.",
     Icon: PiRecycleBold,
     image: "/images/wastepaperImages/onp.jpg",
-
   },
   {
     title: "Mixed Office Waste Paper",
@@ -50,7 +48,6 @@ const products = [
       "A blend of office-generated waste paper including prints, shredded docs, and post-consumer waste.",
     Icon: PiRecycleBold,
     image: "/images/wastepaperImages/mixed.jpg",
-
   },
   {
     title: "Hard White Shavings (HWS)",
@@ -133,11 +130,16 @@ export default function ProductSection() {
         />
       </motion.div>
       <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-        Waste Services
+        Paper Waste Services
       </h2>
       <p className="text-black mt-2 max-w-lg">
-        Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod
-        Tempor Incididunt Ut Labore Et Dolore Magna Aliqua.
+        At Adlex International, we specialize in sustainable waste management
+        solutions, focusing on the recycling and repurposing of various waste
+        paper grades. Our commitment to environmental responsibility ensures
+        that industries receive high-quality recovered materials, reducing waste
+        and promoting a circular economy. From packaging reuse to office paper
+        recycling, we provide tailored solutions that support businesses in
+        achieving their sustainability goals.
       </p>
       {!isProductPage && (
         <div className="mt-6 flex flex-wrap gap-4 justify-center sm:justify-start">

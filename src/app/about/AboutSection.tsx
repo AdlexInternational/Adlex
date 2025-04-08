@@ -45,7 +45,7 @@ const AboutSection = () => {
               Leading the Future of Waste Paper Recycling
             </p>
             <p className="mb-4 sfpro">
-              Welcome to <span className="font-semibold">Arowlex Paper Waste</span>, a trusted name in waste paper management.
+              Welcome to <span className="font-semibold">Adlex International</span>, a trusted name in waste paper management.
               We are a leading waste paper indentor, connecting global suppliers with paper mills and recyclers.
             </p>
             <p className="mb-4 sfpro">
@@ -60,7 +60,7 @@ const AboutSection = () => {
               We are not just facilitators of international trade — we are advocates for a greener tomorrow, actively contributing to the global recycling ecosystem.
             </p>
             <p className="mb-4 sfpro">
-              At <span className="font-semibold">Arowlex Paper Waste</span>, we build long-term relationships based on trust, integrity, and excellence.
+              At <span className="font-semibold">Adlex International</span>, we build long-term relationships based on trust, integrity, and excellence.
               Our strength lies in the dedication of our exceptional team — a mix of industry veterans, dynamic professionals, and passionate problem-solvers
               who bring years of experience in the import/export of waste and finished paper.
             </p>
