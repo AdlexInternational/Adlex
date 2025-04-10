@@ -107,7 +107,7 @@ const sections = [
       </section>
 
       {/* Info Section - Swiper for mobile, Grid for desktop */}
-      <div className=" relative w-full bg-white shadow-lg py-4 px-6 sm:px-12 container mx-auto rounded-2xl -mt-24 z-30">
+      <div className=" relative w-full bg-white shadow-lg py-6 px-6 sm:px-12 container mx-auto rounded-2xl -mt-24 z-30">
         {/* Mobile Swiper (hidden on sm and up) */}
         <div className="sm:hidden">
           <Swiper

@@ -17,7 +17,7 @@ export default function page() {
       <ProductSection />
       <OurTeamSection />
       <WhyChooseUsSection />
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <ContactFormSection/>
     </div>
   );

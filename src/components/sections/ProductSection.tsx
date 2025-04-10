@@ -161,39 +161,26 @@ export default function ProductSection() {
             return (
               <motion.div
                 key={index}
-                className={`relative ${bgColor}  rounded-xl shadow-md overflow-hidden cursor-pointer`}
+                className={`relative ${bgColor} p-6 rounded-xl shadow-md overflow-hidden cursor-pointer`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {/* Added Image Above the Card */}
-                <div className="w-full h-60 relative ">
-                  <Image
-                    src={product.image}
-                    alt={product.title}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-t-xl"
-                  />
-                </div>
-
-                {/* <div
+                <div
                   className={`${bgColorR} p-2 rounded-full w-16 h-16 justify-center items-center flex`}
                 >
                   <Icon size={32} className="text-green-600 " />
-                </div> */}
-                <div className="p-4">
-                  <h3 className="text-lg font-bold ">{product.title}</h3>
-                  <p className="text-gray-600 text-sm mt-2 mb-8">
-                    {product.description}
-                  </p>
-
-                  <motion.div
-                    className="absolute bottom-4 right-4 bg-white w-8 h-8 flex items-center justify-center rounded-full shadow"
-                    whileHover={{ scale: 1.2 }}
-                  >
-                    <FiArrowRight className="text-gray-700" />
-                  </motion.div>
                 </div>
+                <h3 className="text-lg font-bold mt-4">{product.title}</h3>
+                <p className="text-gray-600 text-sm mt-2">
+                  {product.description}
+                </p>
+
+                <motion.div
+                  className="absolute bottom-4 right-4 bg-white w-8 h-8 flex items-center justify-center rounded-full shadow"
+                  whileHover={{ scale: 1.2 }}
+                >
+                  <FiArrowRight className="text-gray-700" />
+                </motion.div>
               </motion.div>
             );
           }

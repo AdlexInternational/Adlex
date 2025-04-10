@@ -57,7 +57,8 @@ const OurTeamSection = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row items-center">
           {/* Left Section - Text Content */}
-          <div className="md:w-1/2 text-gray-800">
+          {/* <div className="md:w-1/2 text-gray-800"> */}
+          <div className=" text-gray-800">
             <h2 className="text-6xl lg:text-[64px] font-bold mb-6 rosmatika">
               Our Team
             </h2>
@@ -78,9 +79,9 @@ const OurTeamSection = () => {
             </p>
           </div>
 
-          <div className="w-full md:w-1/2 flex justify-center">
+          {/* <div className="w-full md:w-1/2 flex justify-center">
             <ImageSlider />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
