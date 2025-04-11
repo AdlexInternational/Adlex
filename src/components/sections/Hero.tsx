@@ -12,6 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { BsPrinter } from "react-icons/bs";
 import { MdLineStyle } from "react-icons/md";
+import { IoFastFoodOutline } from "react-icons/io5";
 
 export default function Hero() {
   const router = useRouter();
@@ -30,7 +31,7 @@ const sections = [
   { title: "Corrugation", icon: MdLineStyle, blob: "smallBlob.svg", pera: "Eco-friendly corrugated materials for sustainable packaging solutions." },
   { title: "Writing & Printing", icon: BsPrinter, blob: "smallBlob.svg", pera: "High-quality recycled paper for writing and printing needs." },
   { title: "Packaging", icon: PiPackageLight, blob: "smallBlob.svg", pera: "Durable and sustainable packaging options for various industries." },
-  { title: "Corrugation", icon: MdLineStyle, blob: "smallBlob.svg", pera: "Strong and lightweight corrugated materials for packaging." },
+  { title: "Food & Specialty", icon: IoFastFoodOutline, blob: "smallBlob.svg", pera: "Specialized paper solutions for food-grade and unique packaging needs." },
 ];
 
   return (
