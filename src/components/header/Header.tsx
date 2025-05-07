@@ -127,11 +127,11 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/images/logo.png" 
+              src="/images/logo1.png" 
               alt="Arowlex Logo"
               width={200} 
               height={200} 
-              className="w-[200px] md:w-70 md:h-16 object-contain"
+              className="w-[120px] md:w-70 md:h-16 object-contain"
             />
             {/* <span className="text-xl lg:text-4xl font-normal rosmatika text-green-500">
               Arowlex
