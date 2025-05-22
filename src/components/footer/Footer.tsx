@@ -21,42 +21,61 @@ export default function Footer() {
       <div className="border-t border-gray-500 my-6 pt-4 flex flex-wrap justify-center gap-6 text-sm">
       <Link href="/" className="hover:underline">Home</Link>
       <Link href="/about" className="hover:underline">About Us</Link>
-      <Link href="/products" className="hover:underline">Explore</Link>
+      {/* <Link href="/products" className="hover:underline">Explore</Link> */}
       <Link href="/contact" className="hover:underline">Contact Us</Link>
-      <Link href="/testimonials" className="hover:underline">Testimonial</Link>
+      {/* <Link href="/testimonials" className="hover:underline">Testimonial</Link> */}
     </div>
 
       {/* Contact Info Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center mt-8">
-        {/* Email */}
-        <div>
-          <div className="flex justify-center mb-2 text-2xl">
-            <FaEnvelope />
-          </div>
-          <h3 className="font-medium">Mail Us</h3>
-          <p className="text-sm text-gray-300">info@adlexpaperwaste.com</p>
-        </div>
+ <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center mt-8">
+  {/* Email */}
+  <div>
+    <div className="flex justify-center mb-2 text-2xl">
+      <FaEnvelope />
+    </div>
+    <h3 className="font-medium">Mail Us</h3>
+    <p className="text-sm text-gray-300">
+      <a
+        href="mailto:info@adlexinternational.com"
+        className="hover:underline"
+      >
+        info@adlexinternational.com
+      </a>
+    </p>
+  </div>
 
-        {/* Office Address */}
-        <div>
-          <div className="flex justify-center mb-2 text-2xl">
-            <FaMapMarkerAlt />
-          </div>
-          <h3 className="font-medium">Office</h3>
-          <p className="text-sm text-gray-300">
-            Villa 198, Street 26, Noida City , Sector 16, India
-          </p>
-        </div>
+  {/* Office Address */}
+  <div>
+    <div className="flex justify-center mb-2 text-2xl">
+      <FaMapMarkerAlt />
+    </div>
+    <h3 className="font-medium">Office</h3>
+    <p className="text-sm text-gray-300">
+      <a
+        href="https://www.google.com/maps?q=B-128+First+Floor,+Sec-2+Noida+Gautam+Budh+Nagar+UP+201301"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        B-128 First Floor, Sec-2 Noida<br />
+        Gautam Budh Nagar, UP 201301
+      </a>
+    </p>
+  </div>
 
-        {/* Call Us */}
-        <div>
-          <div className="flex justify-center mb-2 text-2xl">
-            <FaPhoneAlt />
-          </div>
-          <h3 className="font-medium">Call Us</h3>
-          <p className="text-sm text-gray-300">+0123456789</p>
-        </div>
-      </div>
+  {/* Call Us */}
+  <div>
+    <div className="flex justify-center mb-2 text-2xl">
+      <FaPhoneAlt />
+    </div>
+    <h3 className="font-medium">Call Us</h3>
+    <p className="text-sm text-gray-300">
+      <a href="tel:+919897686964" className="hover:underline">
+        +91-9897686964
+      </a>
+    </p>
+  </div>
+</div>
 
       {/* Bottom copyright */}
       <div className="border-t border-gray-500 mt-10 pt-4 text-center text-sm text-gray-400">

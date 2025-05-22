@@ -172,7 +172,7 @@ function ContactFormSection(props: Props) {
       <div className="absolute inset-0 z-0">
         <iframe
           className="w-full h-full grayscale"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3480.2782838791904!2d77.72671621137528!3d29.27415727521771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c13d573e53c67%3A0xf170c4cc81423bbf!2sArolex%20Pharmaceuticals%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1743848202546!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890951.7772734638!2d77.15244061124034!3d29.274095717600407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5003a836a65%3A0xc1118d00da4becaf!2sSector%20-%202%20Noida!5e0!3m2!1sen!2sin!4v1747922273209!5m2!1sen!2sin"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
@@ -189,29 +189,36 @@ function ContactFormSection(props: Props) {
               <li className="flex gap-3 items-start">
                 <FaMapMarkerAlt className="mt-1" />
                 <span>
-                  Villa 198, Street 26, Khalifa City A, Abu Dhabi, UAE
+                  <a
+                    href="https://www.google.com/maps?q=B-128+First+Floor,+Sec-2+Noida+Gautam+Budh+Nagar+UP+201301"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    B-128 First Floor, Sec-2 Noida Gautam Budh Nagar UP 201301
+                  </a>
                 </span>
               </li>
-              <li className="flex gap-3 items-start">
-                <FaMapMarkerAlt className="mt-1" />
-                <span>
-                  R11, Turquoise 7, Mamsha Al Saadiyat, Abu Dhabi, UAE
-                </span>
-              </li>
-              <li className="flex gap-3 items-start">
-                <FaMapMarkerAlt className="mt-1" />
-                <span>
-                  Daytona House, Exit 8 DKC Veterinary Clinic, Motor City -
-                  Dubai
-                </span>
-              </li>
+
               <li className="flex gap-3 items-start">
                 <IoMailSharp className="mt-1" />
-                <span>info@arowlexpaperwaste.com</span>
+                <span>
+                  <a
+                    href="mailto:info@adlexinternational.com"
+                    className="hover:underline"
+                  >
+                    info@adlexinternational.com
+                  </a>
+                </span>
               </li>
+
               <li className="flex gap-3 items-start">
                 <BiSolidPhoneCall className="mt-1" />
-                <span>0012 3456 789</span>
+                <span>
+                  <a href="tel:9897686964" className="hover:underline">
+                    9897-6869-64
+                  </a>
+                </span>
               </li>
             </ul>
           </div>
@@ -220,7 +227,7 @@ function ContactFormSection(props: Props) {
           <div className="p-8">
             <h2 className="text-2xl font-semibold mb-2">Send A Message</h2>
             <p className="text-sm text-gray-600 mb-6">
-              At vero eos et accusamus et iusto odio dignissimos ducimus
+              We'd love to hear from you — reach out anytime.
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input
