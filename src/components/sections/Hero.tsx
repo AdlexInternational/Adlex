@@ -1,15 +1,15 @@
-'use client'
+"use client";
 import React from "react";
 import { PiPackageLight, PiRecycleBold } from "react-icons/pi";
 import { useRouter } from "next/navigation";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { BsPrinter } from "react-icons/bs";
 import { MdLineStyle } from "react-icons/md";
 import { IoFastFoodOutline } from "react-icons/io5";
@@ -19,21 +19,41 @@ export default function Hero() {
   const handleNavigate = (path: string) => {
     router.push(path);
   };
- 
+
   const heroImages = [
- "/images/wastepaperImages/banner02.png",
- "/images/wastepaperImages/banner1.jpg",
-  // "/images/wastepaperImages/banner2.jpg",
-  // "/images/wastepaperImages/banner3.jpg",
-//  "/images/wastepaperImages/mixed.jpg"
+    "/images/wastepaperImages/banner02.png",
+    "/images/wastepaperImages/banner1.jpg",
+    // "/images/wastepaperImages/banner2.jpg",
+    // "/images/wastepaperImages/banner3.jpg",
+    //  "/images/wastepaperImages/mixed.jpg"
   ];
 
-const sections = [
-  { title: "Corrugation", icon: MdLineStyle, blob: "smallBlob.svg", pera: "Eco-friendly corrugated materials for sustainable packaging solutions." },
-  { title: "Writing & Printing", icon: BsPrinter, blob: "smallBlob.svg", pera: "High-quality recycled paper for writing and printing needs." },
-  { title: "Packaging", icon: PiPackageLight, blob: "smallBlob.svg", pera: "Durable and sustainable packaging options for various industries." },
-  { title: "Food & Specialty", icon: IoFastFoodOutline, blob: "smallBlob.svg", pera: "Specialized paper solutions for food-grade and unique packaging needs." },
-];
+  const sections = [
+    {
+      title: "Corrugation",
+      icon: MdLineStyle,
+      blob: "smallBlob.svg",
+      pera: "Eco-friendly corrugated materials for sustainable packaging solutions.",
+    },
+    {
+      title: "Writing & Printing",
+      icon: BsPrinter,
+      blob: "smallBlob.svg",
+      pera: "High-quality recycled paper for writing and printing needs.",
+    },
+    {
+      title: "Packaging",
+      icon: PiPackageLight,
+      blob: "smallBlob.svg",
+      pera: "Durable and sustainable packaging options for various industries.",
+    },
+    {
+      title: "Food & Specialty",
+      icon: IoFastFoodOutline,
+      blob: "smallBlob.svg",
+      pera: "Specialized paper solutions for food-grade and unique packaging needs.",
+    },
+  ];
 
   return (
     <>
@@ -64,8 +84,9 @@ const sections = [
                     alt={`Waste Management Background ${index + 1}`}
                     layout="fill"
                     objectFit="cover"
-                     priority={index === 0}
+                    priority={index === 0}
                     className="z-0"
+                    quality={75}
                   />
                 </div>
               </SwiperSlide>
@@ -85,7 +106,7 @@ const sections = [
             </h1>
 
             <h2 className="mt-4 text-lg sm:text-xl lg:text-4xl font-light">
-             Adlex International Group
+              Adlex International Group
             </h2>
             <p className="mt-4 text-lg sm:text-xl lg:text-2xl font-light">
               Leading the Future of Sustainable Paper Trade
@@ -129,7 +150,7 @@ const sections = [
             modules={[Autoplay, Pagination, Navigation]}
             className="info-swiper"
           >
-            {sections.map(({ title, icon: Icon, blob ,pera}, index) => (
+            {sections.map(({ title, icon: Icon, blob, pera }, index) => (
               <SwiperSlide key={index}>
                 <div className="relative flex flex-col items-center pb-10">
                   {/* Blob Background */}
@@ -140,6 +161,7 @@ const sections = [
                       width={100}
                       height={100}
                       className="object-cover opacity-50"
+                      quality={75}
                     />
                   </div>
                   <div className="absolute -top-3 w-20 h-20 flex justify-center items-center rotate-90">
@@ -149,6 +171,7 @@ const sections = [
                       width={120}
                       height={120}
                       className="object-cover opacity-50"
+                      quality={75}
                     />
                   </div>
 
@@ -158,9 +181,7 @@ const sections = [
                   {/* Title */}
                   <h3 className="font-bold text-lg mt-8 z-20">{title}</h3>
                   <p className="text-gray-500 text-sm max-w-xs z-20 text-center">
-                   {
-                    pera
-                   }
+                    {pera}
                   </p>
                 </div>
               </SwiperSlide>
@@ -170,7 +191,7 @@ const sections = [
 
         {/* Desktop Grid (hidden on mobile) */}
         <div className=" hidden sm:grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
-          {sections.map(({ title, icon: Icon, blob,pera }, index) => (
+          {sections.map(({ title, icon: Icon, blob, pera }, index) => (
             <div key={index} className="relative flex flex-col items-center">
               {/* Blob Background */}
               <div className="absolute sm:-top-10 -top-5 w-20 h-20 flex justify-center items-center sm:w-32 sm:h-32">
@@ -180,6 +201,7 @@ const sections = [
                   width={100}
                   height={100}
                   className="object-cover opacity-50"
+                  quality={75}
                 />
               </div>
               <div className="absolute sm:-top-10 -top-5 w-20 h-20 flex justify-center items-center sm:w-32 sm:h-32 rotate-90">
@@ -189,6 +211,7 @@ const sections = [
                   width={120}
                   height={120}
                   className="object-cover opacity-50"
+                  quality={75}
                 />
               </div>
 
@@ -197,11 +220,7 @@ const sections = [
 
               {/* Title */}
               <h3 className="font-bold text-lg mt-8 z-20">{title}</h3>
-              <p className="text-gray-500 text-sm max-w-xs z-20">
-                {
-                  pera
-                }
-              </p>
+              <p className="text-gray-500 text-sm max-w-xs z-20">{pera}</p>
             </div>
           ))}
         </div>

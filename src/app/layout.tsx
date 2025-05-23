@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
+      "Adlex International | Sustainable Waste & Recycling Services",
     description:
       "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
     url: "https://adlexinternational.com",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
+      "Adlex International | Sustainable Waste & Recycling Services",
     description:
       "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
     images: ["/images/wastepaperImages/banner1.jpg"],
