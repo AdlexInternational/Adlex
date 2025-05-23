@@ -64,7 +64,7 @@ const sections = [
                     alt={`Waste Management Background ${index + 1}`}
                     layout="fill"
                     objectFit="cover"
-                    priority
+                     priority={index === 0}
                     className="z-0"
                   />
                 </div>

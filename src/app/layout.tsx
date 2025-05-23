@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
-  description: "Adlex International Leading waste management Group offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions for businesses and communities.",
+  title:
+    "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
+  description:
+    "Adlex International Leading waste management Group offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions for businesses and communities.",
   keywords: [
     "adlex",
     "adlex international",
@@ -29,11 +32,13 @@ export const metadata: Metadata = {
     "sustainable waste disposal",
     "paper recycling",
     "corrugated packaging",
-    "industrial waste management"
+    "industrial waste management",
   ],
   openGraph: {
-    title: "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
-    description: "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
+    title:
+      "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
+    description:
+      "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
     url: "https://adlexinternational.com",
     siteName: "Adlex International Waste Solutions",
     images: [
@@ -49,8 +54,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
-    description: "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
+    title:
+      "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
+    description:
+      "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
     images: ["/images/wastepaperImages/banner1.jpg"],
   },
   alternates: {
@@ -82,6 +89,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Adlex International Waste Solutions",
+              url: "https://adlexinternational.com",
+              logo: "https://adlexinternational.com/images/logo.png",
+              sameAs: [
+                "https://www.facebook.com/adlexinternational",
+                "https://www.linkedin.com/company/adlexinternational",
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+91-9953213711",
+                contactType: "Customer Support",
+                areaServed: "IN",
+                availableLanguage: "en",
+              },
+            }),
+          }}
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
