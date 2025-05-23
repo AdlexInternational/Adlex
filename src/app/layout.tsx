@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GreenCycle Waste Solutions | Professional Waste Management & Recycling Services",
-  description: "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions for businesses and communities.",
+  title: "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
+  description: "Adlex International Leading waste management Group offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions for businesses and communities.",
   keywords: [
     "adlex",
     "adlex international",
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
     "industrial waste management"
   ],
   openGraph: {
-    title: "GreenCycle Waste Solutions | Professional Waste Management & Recycling Services",
+    title: "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
     description: "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
     url: "https://adlexinternational.com",
-    siteName: "GreenCycle Waste Solutions",
+    siteName: "Adlex International Waste Solutions",
     images: [
       {
         url: "/images/wastepaperImages/banner1.jpg",
         width: 1200,
         height: 630,
-        alt: "GreenCycle Waste Management Services",
+        alt: "Adlex International Waste Management Services",
       },
     ],
     locale: "en_US",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GreenCycle Waste Solutions | Professional Waste Management & Recycling Services",
+    title: "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
     description: "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
     images: ["/images/wastepaperImages/banner1.jpg"],
   },

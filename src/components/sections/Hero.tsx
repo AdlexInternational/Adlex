@@ -21,10 +21,11 @@ export default function Hero() {
   };
  
   const heroImages = [
+ "/images/wastepaperImages/banner02.png",
  "/images/wastepaperImages/banner1.jpg",
-  "/images/wastepaperImages/banner2.jpg",
-  "/images/wastepaperImages/banner3.jpg",
- "/images/wastepaperImages/mixed.jpg"
+  // "/images/wastepaperImages/banner2.jpg",
+  // "/images/wastepaperImages/banner3.jpg",
+//  "/images/wastepaperImages/mixed.jpg"
   ];
 
 const sections = [
@@ -79,13 +80,15 @@ const sections = [
         <div className="relative z-10 container mx-auto px-6 flex justify-center sm:justify-start">
           <div className="max-w-3xl text-white text-center sm:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold uppercase leading-tight">
-              Waste Management <br /> Waste Less,
+              Reduce. <br /> Reuse.
               <br /> Recycle More.
             </h1>
 
+            <h2 className="mt-4 text-lg sm:text-xl lg:text-4xl font-light">
+             Adlex International Group
+            </h2>
             <p className="mt-4 text-lg sm:text-xl lg:text-2xl font-light">
-              Efficient solutions for waste collection, dumpster rental, and
-              reliable garbage pickup services.
+              Leading the Future of Sustainable Paper Trade
             </p>
 
             {/* Buttons */}
