@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   description:
     "Adlex International Leading waste management Group offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions for businesses and communities.",
   keywords: [
-    "adlex",
     "adlex international",
+    "adlex",
     "waste management",
     "recycling services",
     "dumpster rental",
@@ -33,10 +33,17 @@ export const metadata: Metadata = {
     "paper recycling",
     "corrugated packaging",
     "industrial waste management",
+    "waste paper recycling",
+    "paper trade company",
+    "sustainable paper solutions",
+    "global waste paper management",
+    "paper recycling experts",
+    "eco-friendly paper trade",
+    "waste paper suppliers",
+    "paper mills",
   ],
   openGraph: {
-    title:
-      "Adlex International | Sustainable Waste & Recycling Services",
+    title: "Adlex International | Sustainable Waste & Recycling Services",
     description:
       "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
     url: "https://adlexinternational.com",
@@ -54,8 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Adlex International | Sustainable Waste & Recycling Services",
+    title: "Adlex International | Sustainable Waste & Recycling Services",
     description:
       "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
     images: ["/images/wastepaperImages/banner1.jpg"],
