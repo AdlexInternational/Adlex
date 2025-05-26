@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import Head from "next/head";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -95,7 +95,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -120,7 +120,7 @@ export default function RootLayout({
           }}
         />
         <meta name="google-site-verification" content="30FVytX0Y4SGJqLyD0SltdkWrYDLvuJEGYH7PGM04C4" />
-      </Head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
