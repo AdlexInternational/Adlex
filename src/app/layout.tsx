@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Adlex International | Sustainable Waste & Recycling Services",
     description:
       "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
-    url: "https://adlexinternational.com",
+    url: "https://www.adlexinternational.com",
     siteName: "Adlex International Waste Solutions",
     images: [
       {
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     images: ["/images/wastepaperImages/banner1.jpg"],
   },
   alternates: {
-    canonical: "https://adlexinternational.com",
+    canonical: "https://www.adlexinternational.com/",
   },
   robots: {
     index: true,
@@ -103,8 +103,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Adlex International Waste Solutions",
-              url: "https://adlexinternational.com",
-              logo: "https://adlexinternational.com/images/logo.png",
+              url: "https://www.adlexinternational.com",
+              logo: "https://www.adlexinternational.com/images/logo.png",
               sameAs: [
                 "https://www.facebook.com/adlexinternational",
                 "https://www.linkedin.com/company/adlexinternational",

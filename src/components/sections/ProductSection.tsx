@@ -192,11 +192,11 @@ export default function ProductSection() {
       <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
         Paper Products
       </h2>
-      <p className="text-black mt-2 max-w-lg">
+      <h1 className="text-black mt-2 max-w-lg">
         At Adlex International, we specialize in sustainable paper solutions,
         offering both imported waste paper for recycling and high-quality finish
         paper products.
-      </p>
+      </h1>
       {!isProductPage && (
         <div className="mt-6 flex flex-wrap gap-4 justify-center sm:justify-start">
           <button
