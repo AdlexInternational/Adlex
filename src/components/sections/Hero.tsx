@@ -23,9 +23,9 @@ export default function Hero() {
   const heroImages = [
     "/images/wastepaperImages/banner02.png",
     "/images/wastepaperImages/banner1.jpg",
-    // "/images/wastepaperImages/banner2.jpg",
-    // "/images/wastepaperImages/banner3.jpg",
-    //  "/images/wastepaperImages/mixed.jpg"
+    "/images/wastepaperImages/banner2.jpg",
+    "/images/wastepaperImages/banner3.jpg",
+     "/images/wastepaperImages/mixed.jpg"
   ];
 
   const sections = [

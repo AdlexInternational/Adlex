@@ -57,7 +57,7 @@ export default function Footer() {
         rel="noopener noreferrer"
         className="hover:underline"
       >
-        B-128 First Floor, Sec-2 Noida<br />
+        B-128 First Floor, Sec-2 Noida Near sector 15 metro<br />
         Gautam Budh Nagar, UP 201301
       </a>
     </p>

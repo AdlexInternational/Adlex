@@ -13,6 +13,7 @@ export default function page() {
   return (
     <div>
       <Hero />
+      
       <AboutSection />
       <ProductSection />
       <OurTeamSection />

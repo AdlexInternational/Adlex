@@ -195,7 +195,7 @@ function ContactFormSection(props: Props) {
                     rel="noopener noreferrer"
                     className="hover:underline"
                   >
-                    B-128 First Floor, Sec-2 Noida Gautam Budh Nagar UP 201301
+                    B-128 First Floor, Sec-2 Noida Near sector 15 metro Gautam Budh Nagar UP 201301
                   </a>
                 </span>
               </li>

@@ -171,7 +171,7 @@ export default function ProductSection() {
 
   const displayProducts = isProductPage
     ? filteredProducts
-    : filteredProducts.slice(0, 6);
+    : filteredProducts;
 
   return (
     <div ref={ref} className="relative container mx-auto py-12 px-6">
