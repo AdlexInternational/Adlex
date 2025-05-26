@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Adlex International Waste Solutions | Professional Waste Management & Recycling Services",
+    "Adlex International | Sustainable Waste & Recycling Services",
   description:
-    "Adlex International Leading waste management Group offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions for businesses and communities.",
+    "Adlex International Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
   keywords: [
     "adlex international",
     "adlex",
