@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     "Adlex International Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
   keywords: [
     "adlex international",
+    "Adlex international",
     "adlex",
     "waste management",
     "recycling services",

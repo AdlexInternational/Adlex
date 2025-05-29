@@ -193,7 +193,7 @@ export default function ProductSection() {
         Paper Products
       </h2>
       <h1 className="text-black mt-2 max-w-lg">
-        At Adlex International, we specialize in sustainable paper solutions,
+       Adlex International, we specialize in sustainable paper solutions,
         offering both imported waste paper for recycling and high-quality finish
         paper products.
       </h1>
