@@ -66,9 +66,7 @@ export const metadata: Metadata = {
       "Leading waste management company offering comprehensive recycling services, dumpster rentals, and eco-friendly waste solutions.",
     images: ["/images/wastepaperImages/banner1.jpg"],
   },
-  alternates: {
-    canonical: "https://www.adlexinternational.com/",
-  },
+
   robots: {
     index: true,
     follow: true,
