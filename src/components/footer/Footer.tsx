@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-[#003d29] text-white pt-12 pb-6 px-6 md:px-12">
       {/* Top Title Section */}
       <div className="text-center max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold mb-2">Adlex International Pvt Ltd.</h2>
+        <h2 className="text-4xl font-bold mb-2">Adlex International Empowering Global Trade</h2>
         <p className="text-sm text-gray-300">
         Adlex International is committed to revolutionizing how paper waste is managed
           across industries. Our mission is to promote sustainability by
@@ -79,7 +79,7 @@ export default function Footer() {
 
       {/* Bottom copyright */}
       <div className="border-t border-gray-500 mt-10 pt-4 text-center text-sm text-gray-400">
-        Copyright © 2025 Adlex International Pvt Ltd.
+        Copyright © 2025 Adlex International Empowering Global Trade
       </div>
     </footer>
   );
