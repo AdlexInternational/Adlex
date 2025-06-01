@@ -66,7 +66,7 @@ const OurTeamSection = () => {
               Committed to a Sustainable Future
             </p>
             <p className="mb-4 sfpro">
-              Welcome to <span className="font-semibold">Adlex International Paper Waste</span>, where we celebrate teamwork, transparency, and customer satisfaction. Together, we are paving the way for a more sustainable future. Our collective focus on innovation, reliability, and eco-conscious solutions drives us to exceed expectations. We are not just facilitators of international trade; we are advocates for a greener tomorrow, actively contributing to the global recycling ecosystem.
+              Welcome to <span className="font-semibold">Adlex International</span>, where we celebrate teamwork, transparency, and customer satisfaction. Together, we are paving the way for a more sustainable future. Our collective focus on innovation, reliability, and eco-conscious solutions drives us to exceed expectations. We are not just facilitators of international trade; we are advocates for a greener tomorrow, actively contributing to the global recycling ecosystem.
             </p>
             <p className="mb-4 sfpro">
               With over a decade of experience in the waste paper industry, we have gained deep expertise in sourcing and supplying high-quality recovered paper to paper mills and recyclers. Our journey in this sector has allowed us to build strong global networks, understand market dynamics, and deliver tailored solutions to clients.
