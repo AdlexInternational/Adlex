@@ -153,7 +153,7 @@ function ContactFormSection(props: Props) {
 
       // if (!validateForm()) return;
 
-      const mailTo = `https://mail.google.com/mail/?view=cm&fs=1&to=info@arowlexpaperwaste.com&su=${encodeURIComponent(
+      const mailTo = `https://mail.google.com/mail/?view=cm&fs=1&to=info@adlexinternational.com&su=${encodeURIComponent(
         form.subject || "New Inquiry"
       )}&body=${encodeURIComponent(
         `Name: ${form.firstName} ${form.lastName}\nEmail: ${form.email}\nPhone: ${form.phone}\nMessage:\n${form.message}`

@@ -85,10 +85,10 @@ const Sidebar = ({
               <li>
                 <Link
                   className="flex items-center gap-4 text-sm"
-                  href={"tel:+91 1234567890"}
+                  href={"tel:+91 9897686964"}
                 >
                   <BiSolidPhoneCall size={16} className="text-green-600" /> +91
-                  1234567890
+                  9897-6869-64
                 </Link>{" "}
               </li>
               <li>
@@ -97,13 +97,15 @@ const Sidebar = ({
                   href={"mailto:thetravelcollection@gmail.com"}
                 >
                   <IoMailSharp size={14} className="text-green-600" />
-                  arowlexwaste@gmail.com
+                  info@adlexinternational.com
                 </Link>
               </li>
               <li>
                 <Link className="flex items-center gap-4 text-sm" href={"#"}>
                   <FaMapMarkerAlt size={16} className="text-green-600" />
-                  India
+                   B-128 First Floor, Sec-2 Noida Near sector 15 metro
+              <br />
+              Gautam Budh Nagar, UP 201301
                 </Link>
               </li>
             </ul>
